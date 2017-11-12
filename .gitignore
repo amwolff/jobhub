@@ -13,7 +13,5 @@
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
 
-.DS_Store
-.vscode
 cmd/tests/simple_success
 cmd/tests/simple_failure

@@ -130,9 +130,9 @@ func (p *Pipeline) AddJobDependency(job Job, deps ...Job) error {
 
 func (p Pipeline) topologicalSort() ([]int, error) {
 	var (
-		temporaryMark = make(map[int]bool)
-		permanentMark = make(map[int]bool)
 		acyclic       = true
+		permanentMark = make(map[int]bool)
+		temporaryMark = make(map[int]bool)
 		queue         []int
 		visit         func(int)
 	)
